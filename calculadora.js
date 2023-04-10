@@ -4,6 +4,7 @@ function calculadora() {
     if (operacao > 6 || operacao <= 0) {
         alert('Opção invalida');
         calculadora();
+    
     }
     
     let n1 = Number(prompt('insira um valor:'));
