@@ -4,7 +4,6 @@ function calculadora() {
     if (operacao > 6 || operacao <= 0) {
         alert('Opção invalida');
         calculadora();
-    
     }
     
     let n1 = Number(prompt('insira um valor:'));
@@ -14,15 +13,15 @@ function calculadora() {
     if (operacao == 1) {
         soma(n1,n2);
     }    else if (operacao == 2) {
-         subtração(n1,n2);
+         subtracao(n1,n2);
     }    else if (operacao == 3) {
-         multiplicação(n1,n2);
+         multiplicacao(n1,n2);
     }    else if (operacao == 4) {
-         divisão(n1,n2);
+         divisao(n1,n2);
     }    else if (operacao == 5) {
-         divisão_inteira(n1,n2);
+         divisaoInteira(n1,n2);
     }    else if (operacao == 6) {
-         potenciação(n1,n2);
+         potenciacao(n1,n2);
     }        
 
     while (true) {
@@ -44,27 +43,27 @@ function soma(n1,n2) {
     alert(`${n1} + ${n2} = ${resultado}`);  
 }
 
-function subtração(n1,n2) {
+function subtracao(n1,n2) {
     let resultado = n1 - n2;
     alert(`${n1} - ${n2} = ${resultado}`);
 }
 
-function multiplicação(n1,n2) {
+function multiplicacao(n1,n2) {
     let resultado = n1 * n2;
     alert(`${n1} * ${n2} = ${resultado}`);
 }
 
-function divisão(n1,n2) {
+function divisao(n1,n2) {
     let resultado = n1 / n2;
     alert(`${n1} / ${n2} = ${resultado}`);
 }
 
-function divisão_inteira(n1,n2) {
+function divisaoInteira(n1,n2) {
     let resultado = n1 % n2;
     alert(`O Resultado entre ${n1} e ${n2} é igual a ${resultado}`);
 }
 
-function potenciação(n1,n2) {
+function potenciacao(n1,n2) {
     let resultado = n1 ** n2;
     alert(`${n1} elevado a ${n2}ª é igual a ${resultado}`);
 }
